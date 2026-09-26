@@ -20,9 +20,12 @@ BEFORE YOU START
    not source code: an app without a README is invisible.
 
 WHILE YOU WORK
-4. Commit small and often with messages that say what changed and why. End every commit message with
-   a trailer naming you, e.g.  Co-Authored-By: Codex <noreply@openai.com>  — that is the only way the
-   Brain can tell which AI did what.
+4. Commit small and often with messages that say what changed and why. EVERY commit you make must carry
+   a trailer naming you - pass it on the command line so it cannot be forgotten:
+     git commit --trailer "Co-Authored-By: Codex <noreply@openai.com>" -m "..."
+   (Claude: <noreply@anthropic.com>, Cursor: <noreply@cursor.com>, Gemini: <noreply@google.com>.)
+   All commits come from Kev's one GitHub account, so this trailer is the ONLY way the Brain can tell
+   which AI did what. A commit without it is recorded as Kev's.
 5. Kev approves commits to app repos and to kvlr-stack docs BEFORE they are made: show the change and
    the message, then ask once per batch. After a yes, commit and push together. The one exception is
    the worklog (step 7). Never deploy (Netlify, production servers) without an explicit go-ahead.
