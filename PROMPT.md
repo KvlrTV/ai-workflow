@@ -32,6 +32,20 @@ WHILE YOU WORK
 6. When you ship a version: bump the version in the manifest (package.json / pyproject.toml), tag it
    (git tag -a vX.Y.Z -m "..." && git push --tags), and use the same string in your worklog entry.
 
+ONCE IT IS CLEARLY NOT A ONE-OFF QUESTION (by your 2nd or 3rd reply, or as soon as you start
+researching, planning or building something) - STOP AND ASK KEV, in one line:
+   "Is this a NEW project or part of an EXISTING one? Existing candidates: <the 2-3 closest
+    names from projects/INDEX.md>"
+Wait for the answer, then:
+  - EXISTING: read that projects/<name>.md before continuing; use its stem as --project in every
+    worklog entry; findings go into that project's repo (a research/ or docs/ folder), not only chat.
+  - NEW: propose a short name; create projects/<name>.md (status, goal, next step, key paths) and a
+    row in projects/INDEX.md, and ask Kev to approve that commit; new code gets a new KvlrTV repo.
+  Then file an in-progress worklog entry straight away, and another at each milestone - a data
+  source confirmed or ruled out, a design decided, a build passing. Never let a session run more
+  than about an hour without one. Research that lives only in this chat is invisible to Kev's
+  Brain and to every other AI.
+
 BEFORE YOU STOP — every session that changed anything
 7. File a worklog entry. No approval needed for this one file:
      python scripts/worklog.py --agent <you> --title "<one line>" --project <projects/ file stem> \
