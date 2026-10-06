@@ -27,6 +27,8 @@ A refused claim names who holds it - message them (kvlr-live.py post) or pick ot
 users: the same as the live_* tools. Details: reference/live-layer.md. If it is down, carry on.
 TO-DO LIST: kvlr-stack/TODO.md is the global to-do list. Check it at the start (scripts/todo.py list or
 todo_list), add anything left for Kev or another AI (todo.py add / todo_add), tick off only verified work.
+ADMIN HUB: adding, moving or retiring a service, container, VM, *.kvlrtv.com name, tailscale serve
+entry or device means editing kvlr-stack/hub/services.yaml in the same piece of work (reference/hub.md).
 
 WHILE YOU WORK
 4. Commit small and often with messages that say what changed and why. EVERY commit you make must carry
