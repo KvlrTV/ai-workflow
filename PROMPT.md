@@ -19,6 +19,13 @@ BEFORE YOU START
    that says what it is, where it runs and how to deploy it. The Brain reads markdown and manifests,
    not source code: an app without a README is invisible.
 
+LIVE LAYER (who else is working right now) - if you can reach 192.168.1.58 or have the KVLR Brain
+connector: check in when you start, claim shared files/services before editing, read messages:
+  python scripts/kvlr-live.py checkin --agent <you> --project <stem> --task "<one line>"
+  python scripts/kvlr-live.py claim <file|repo|lxc:N>   then  checkout --summary "..." when done
+A refused claim names who holds it - message them (kvlr-live.py post) or pick other work. Connector
+users: the same as the live_* tools. Details: reference/live-layer.md. If it is down, carry on.
+
 WHILE YOU WORK
 4. Commit small and often with messages that say what changed and why. EVERY commit you make must carry
    a trailer naming you - pass it on the command line so it cannot be forgotten:
