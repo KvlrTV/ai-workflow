@@ -25,6 +25,8 @@ connector: check in when you start, claim shared files/services before editing, 
   python scripts/kvlr-live.py claim <file|repo|lxc:N>   then  checkout --summary "..." when done
 A refused claim names who holds it - message them (kvlr-live.py post) or pick other work. Connector
 users: the same as the live_* tools. Details: reference/live-layer.md. If it is down, carry on.
+TO-DO LIST: kvlr-stack/TODO.md is the global to-do list. Check it at the start (scripts/todo.py list or
+todo_list), add anything left for Kev or another AI (todo.py add / todo_add), tick off only verified work.
 
 WHILE YOU WORK
 4. Commit small and often with messages that say what changed and why. EVERY commit you make must carry
